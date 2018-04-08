@@ -3,9 +3,6 @@
 #define CURRENT_LANG INTL_LANG
 
 // WLAN Konfig
-/*#define WLANSSID "telenet-D4A8C" //"Your Wifi-ID"
-#define WLANPWD "1wudsGnreHtK" //""*/
-
 #define WLANSSID "Your Wifi-ID"
 #define WLANPWD "" //""
 

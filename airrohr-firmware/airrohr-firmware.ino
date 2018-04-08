@@ -2172,12 +2172,6 @@ String sensorSDS() {
   int position = 0;
 
   debug_out(F("Start reading SDS011"), DEBUG_MED_INFO, 1);
-  
- /* Serial.print(long(act_milli - starttime));
-  Serial.print(" < ");
-  Serial.print(long(sending_intervall_ms) - long(warmup_time_SDS_ms + reading_time_SDS_ms)));
-  Serial.print(" - ");
-  Serial.println(is_SDS_running);*/
  
   if (long(act_milli - starttime) < (long(sending_intervall_ms) - long(warmup_time_SDS_ms + reading_time_SDS_ms))) {
     if (is_SDS_running) {
