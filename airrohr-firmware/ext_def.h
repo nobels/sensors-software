@@ -3,8 +3,11 @@
 #define CURRENT_LANG INTL_LANG
 
 // WLAN Konfig
-#define WLANSSID "Freifunk-disabled"
-#define WLANPWD ""
+/*#define WLANSSID "telenet-D4A8C" //"Your Wifi-ID"
+#define WLANPWD "1wudsGnreHtK" //""*/
+
+#define WLANSSID "Your Wifi-ID"
+#define WLANPWD "" //""
 
 // BasicAuth Konfig
 #define WWW_USERNAME "admin"
@@ -45,7 +48,7 @@
 #define PWD_INFLUX "info"
 
 // DHT22, Sensor Temperatur und Luftfeuchte
-#define DHT_READ 1
+#define DHT_READ 0
 #define DHT_TYPE DHT22
 #define DHT_API_PIN 7
 #if defined(ESP8266)
@@ -56,7 +59,7 @@
 #endif
 
 // HTU21D, Sensor Temperatur und Luftfeuchte
-#define HTU21D_READ 0
+#define HTU21D_READ 1
 #define HTU21D_API_PIN 7
 #if defined(ESP8266)
 #define HTU21D_PIN_SCL D4
@@ -137,13 +140,16 @@
 #endif
 
 // Automatische Firmware-Updates über WLAN
-#define AUTO_UPDATE 1
+#define AUTO_UPDATE 0
 
 // OLED Display SSD1306 angeschlossen?
-#define HAS_DISPLAY 0
+#define HAS_DISPLAY 1
 
 // LCD Display LCD1602 angeschlossen?
 #define HAS_LCD1602 0
+
+// LCD Display LCD1602 (0x27) angeschlossen?
+#define HAS_LCD1602_27 0
 
 // Wieviele Informationen sollen über die serielle Schnittstelle ausgegeben werden?
 #define DEBUG 3

@@ -4,3 +4,5 @@ build-uno
 esp8266-arduino/.DS_Store
 
 .DS_Store
+airrohr-firmware/.vscode/c_cpp_properties.json
+airrohr-firmware/.vscode/settings.json
